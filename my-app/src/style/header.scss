@@ -1,0 +1,123 @@
+$base-color: #041E50;
+
+.nav{
+    background-color: $base-color;
+    padding: 10px 60px;
+    height: 30px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .infoCompras{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p{
+            padding-left: 7px;
+        }
+
+    }
+
+    img {
+        height: 25px;
+    }
+}
+
+.navPesquisa{
+
+    display: flex;
+    justify-content: space-between;
+    height: 28px;
+    margin: 30px 50px;
+    padding: 0 10px;
+    align-items: center;
+
+    .logo{
+        width: 180px;
+        height: 28px;
+        color: $base-color;
+    }
+
+    input{
+        padding: 15px;
+        border-radius: 4px;
+        border-color: $base-color;
+    }
+
+    .navInfos{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p{
+            font-size: 15px;
+        }
+
+        img{
+            padding: 10px;
+            height: 28px;
+        }
+    }
+
+    .carrinho{
+        background-color: $base-color;
+        padding: 10px;
+        padding-top: 20px;
+        margin-top: 50px;
+
+        color: #FFFFFF;
+
+        p{
+
+            font-size: 10px;
+            margin: 10px;
+        }
+    }
+
+
+}
+
+.changeColor{
+    fill:$base-color;
+}
+
+.main{
+    background-image: url("../imgs/bg-main.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    height: 600px;
+    background-size: cover;
+    
+
+
+    .container{
+        margin: 0;
+        float: left;
+        padding: 120px;
+        justify-content: space-between;
+
+
+
+        h1{
+            font-size: 47px;
+            font-weight: 700;
+        }
+        span{
+            font-size: 50px;
+            font-weight: 300;
+        }
+    
+        h2{
+            font-size: 16px;
+            font-weight: 300;
+        }
+        h3{
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+
+}
