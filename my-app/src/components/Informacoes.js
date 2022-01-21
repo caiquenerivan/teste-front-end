@@ -42,10 +42,20 @@ function Informacoes(){
 
             <div className="novidades">
                 <div className="novidade1">
-                    
+                    <div className='transparent'>
+                        <h2>NOVIDADES</h2>
+
+                        <h1><span>ÁUDIO</span><br/> PROFISSIONAL </h1>
+                        <button>CONFIRA</button>
+                    </div>
                 </div>
                 <div className="novidade2">
-                    
+                    <div className='transparent'>
+                        <h2>NOVIDADES</h2>
+
+                        <h1><span>INSTRUMENTOS</span><br/> MUSICAIS </h1>
+                        <button>CONFIRA</button>
+                    </div>
                 </div>
             </div>
 

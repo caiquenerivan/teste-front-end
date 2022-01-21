@@ -1,0 +1,106 @@
+$base-color: #041E50;
+
+.informacoes{
+    color: #FFFFFF;
+    padding-top: 80px ;
+    margin-top: 200px;
+    background-color: $base-color;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 180px;
+
+    text-align: justify;
+
+    h2{
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    h3{
+        font-weight: 400;
+        font-size: 12px;
+    }
+}
+
+.newsletter{
+    background-color: #FFFFFF;
+
+
+    text-align: justify;
+
+    width: 200px;
+    padding: 15px;
+
+    border-radius: 6px;
+
+    color: $base-color;
+
+    
+    h2{
+        font-weight: 400;
+        font-size: 14px;
+
+    }
+
+    span{
+        font-weight: 700;
+    }
+}
+
+.inputs{
+    color: $base-color;
+    
+    input{
+        padding: 5px;
+        margin: 5px 0;
+
+        border: none;
+        border-bottom: solid 1px $base-color;
+    }
+
+    .botao {
+        border: solid 1px $base-color;
+        border-radius: 6px;
+        padding: 5px 20px;
+        background-color: #FFFFFF;
+
+        cursor: pointer;
+    }
+   
+}
+
+.formaPagamento{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1px;
+    grid-row-gap: 10px;
+
+}
+
+.fimPagina{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 80px;
+
+    align-items: center;
+    p{
+        width: 60%;
+        text-align: justify;
+    }
+
+    .criado{
+        display: flex;
+        justify-content: space-between;
+
+        width: 20%;
+
+        .vtex{
+            height: 30px;
+        }
+    }
+    img{
+        height: 40px;
+    }
+}
