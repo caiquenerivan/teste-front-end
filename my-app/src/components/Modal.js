@@ -1,9 +1,11 @@
 import React from 'react';
-import '../style/modal.scss'
+import '../style/modal.scss';
 
 
 function Modal(props){
+    function closeModal(){
 
+    }
 
 
     return(
@@ -23,7 +25,7 @@ function Modal(props){
                         <h3>{`Veja mais detalhes do produto >`}</h3>
                     </div>
                 </div>
-                <button id="close">x</button>
+                <button id="close" onClick={closeModal}>x</button>
             </div>
         </div>
 
