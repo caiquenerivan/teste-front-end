@@ -9,13 +9,19 @@ function Produto(props){
     let visible = false;
     let tamanho = props.price.length-2;
 
-
+    const inativoBotao = document.getElementById("botao-inativo");
     const cents = props.price.substr(-2);
     const reais = props.price.substr(0, tamanho);
 
-    const preco = `${reais},${cents}`;
+    const price = `${reais},${cents}`;
+    
+    //inativoBotao.style.display = "none";
 
-
+    function inicianativo(botao){
+        if(botao!=="none"){
+            botao.style.display = "none";
+        }
+    }
 
     function getModal(){
         setIsModalVisible(true);
@@ -24,6 +30,7 @@ function Produto(props){
 
     function toggleDisplay(){
         var x = document.getElementById("botao-inativo");
+
         if (!visible) {
             x.style.display = "block";
             visible = true;
@@ -32,6 +39,7 @@ function Produto(props){
             visible = false;
         }
     }
+
 
     return(
         
@@ -44,11 +52,11 @@ function Produto(props){
                     </div>
                     <h3>{props.title}</h3>
                     <p>{props.desc}</p>
-                    <h2>R$ {preco}</h2>       
+                    <h2>R$ {price}</h2>       
                 </a>
                 
             </div>
-                {isModalVisible?<Modal title={props.title} img={props.img} desc={props.desc} price={preco}/>:null}
+                {isModalVisible?<Modal onClose={()=>setIsModalVisible(false)} title={props.title} img={props.img} desc={props.desc} price={price}/>:null}
         </div>
 
     );

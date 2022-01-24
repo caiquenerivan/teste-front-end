@@ -18,6 +18,7 @@ $base-color: #041E50;
         background-color: #FFFFFF;
         width: 760px;
         height: 355px;
+        border-radius: 5px;
 
         #close{
             color: $base-color;
@@ -41,14 +42,55 @@ $base-color: #041E50;
         }
 
         .content{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-top: 100px;
             padding: 0 80px;
+            text-align: justify;
 
             .imagem{
                 height: 262px;
                 width: 329px;
+            }
+
+            .info{
+                height: 262px;
+                width: 290px;
+                margin: 0;
+            }
+
+            h2{
+                font-weight: 400;
+                font-size: 20px;
+
+            }
+            h1{
+                font-weight: 700;
+                color: $base-color;
+            }
+
+            h3{
+                font-size: 12px;
+                font-weight: 400;
+                text-decoration: underline $base-color;
+
+                span{
+                    text-decoration: none;
+                }
+            }
+
+            p{
+                font-size: 10px;
+                font-weight: 400;
+            }
+
+            #adicionar{
+                background-color: $base-color;
+
+                &:hover{
+                    color: #FFFFFF;
+                }
             }
         }
 

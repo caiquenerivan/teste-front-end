@@ -3,16 +3,16 @@ import '../style/modal.scss';
 
 
 function Modal(props){
-    function closeModal(){
 
-    }
-
+    const handleOutsideClick =(e)=>{
+        if(e.target.id === "modal") props.onClose();
+    };
 
     return(
         
   
-        <div className="modal">
-            <div className="container">
+        <div id="modal" className="modal" onClick={handleOutsideClick}>
+            <div className="container" >
                 
                 <div className="content">
                     <div className="imagem">
@@ -20,12 +20,13 @@ function Modal(props){
                     </div>
                     <div className="info">
                         <h2>{props.title}</h2>
-                        <h1>{props.preco}</h1>
+                        <h1>R$ {props.price}</h1>
                         <p>{props.desc}</p>
-                        <h3>{`Veja mais detalhes do produto >`}</h3>
+                        <h3>{`Veja mais detalhes do produto`} <span>{` >`}</span></h3>
+                        <button id="adicionar">Adicionar ao carrinho</button>
                     </div>
                 </div>
-                <button id="close" onClick={closeModal}>x</button>
+                <button id="close" onClick={props.onClose}>x</button>
             </div>
         </div>
 
