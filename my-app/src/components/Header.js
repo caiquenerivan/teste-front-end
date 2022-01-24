@@ -53,8 +53,8 @@ function Header(){
             </div>
 
 
-            <div class="main"> 
-                <div class="container">
+            <div className="main"> 
+                <div className="container">
                     <h2>NOVOS PRODUTOS</h2>
                     <h1>
                         INSTRUMENTOS <br/> <span>PROFISSIONAIS</span>

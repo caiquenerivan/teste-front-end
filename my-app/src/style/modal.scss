@@ -1,0 +1,47 @@
+$base-color: #041E50;
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        background-color: #FFFFFF;
+        width: 760px;
+        height: 355px;
+
+        #close{
+            color: $base-color;
+            position: absolute;
+            display: block;
+            top: 210px;
+            border: none;
+            right: 310px;   
+            font-size: 30px;
+        }
+
+        .content{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 100px;
+            padding: 0 80px;
+
+            
+            .imagem{
+                height: 262px;
+                width: 329px;
+            }
+        }
+    
+    
+    }
+    background-color: rgba($color: #000000, $alpha: 0.7);
+}
